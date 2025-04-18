@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Footprint 🌍</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🌍 Carbon Footprint & Nature Awareness</h1>
+
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('calculator')">
+        Calculator
+      </button>
+      <button class="tab-button" onclick="showTab('knowledge')">
+        Knowledge
+      </button>
+    </div>
+
+    <div id="calculator" class="tab-content active">
+      <h2>🌿 How Many Trees to Balance Your Carbon Footprint?</h2>
+      <label for="carbonInput">Your yearly carbon footprint (kg CO₂):</label>
+      <input type="number" id="carbonInput" value="2000" />
+      <button class="calculate" onclick="calculateTrees()">Calculate</button>
+      <div class="result" id="treeResult"></div>
+    </div>
+
+    <div id="knowledge" class="tab-content">
+      <h2>🌱 Nature & Climate Facts</h2>
+      <ul>
+        <li>
+          <strong>What is Carbon Emission?</strong> - Carbon emissions refer to
+          the release of carbon, primarily as carbon dioxide (CO₂), into the
+          atmosphere. These emissions are mostly caused by burning fossil fuels
+          like coal, oil, and natural gas, which release CO₂ when used for
+          energy production, transportation, and industry.
+        </li>
+        <li>
+          <strong>Why is Carbon Emission a Problem?</strong> - CO₂ is a
+          greenhouse gas, which means it traps heat in the Earth's atmosphere.
+          This contributes to global warming and climate change, leading to
+          extreme weather events, sea level rise, and biodiversity loss.
+        </li>
+        <li>
+          <strong>Average Human Emissions</strong> - The average person emits
+          approximately 4–5 metric tons of CO₂ per year, depending on lifestyle,
+          transportation, and energy usage.
+        </li>
+        <li>
+          <strong>India's CO₂ Emissions</strong> - India emits around 2 metric
+          tons of CO₂ per person annually, which is relatively low compared to
+          developed nations. However, due to its large population, the total
+          emissions are significant and contribute to global warming.
+        </li>
+        <li>
+          <strong>Carbon Offset with Trees</strong> - One tree absorbs
+          approximately 22 kg of CO₂ annually. To offset 1 person's yearly
+          emissions in India (~2000 kg), you would need 90-100 trees.
+        </li>
+        <li>
+          <strong>How to Reduce Carbon Emissions?</strong>
+          <ul>
+            <li>Use renewable energy (solar, wind, hydro).</li>
+            <li>Drive less or use electric vehicles.</li>
+            <li>Eat more plant-based foods and reduce meat consumption.</li>
+            <li>Plant trees and support reforestation efforts.</li>
+            <li>Improve energy efficiency in homes and offices.</li>
+            <li>Reduce, reuse, and recycle to minimize waste.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Impact of Deforestation</strong> - Deforestation not only
+          reduces the number of trees that can absorb CO₂, but it also releases
+          stored carbon in the soil into the atmosphere, exacerbating global
+          warming.
+        </li>
+        <li>
+          <strong>Global Warming Effects</strong> - Global warming leads to more
+          frequent heatwaves, unpredictable weather, water shortages, and
+          disruptions to ecosystems, affecting both people and wildlife.
+        </li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
