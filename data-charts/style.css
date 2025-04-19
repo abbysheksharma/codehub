@@ -1,0 +1,12 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+#chartContainer {
+  width: 400px;
+  margin: auto;
+}
+select {
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}

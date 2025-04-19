@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pollution Chart Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h2>Pollution Trends Over Years</h2>
+    <label for="chartType">Choose chart type:</label>
+    <select id="chartType">
+      <option value="bar">Bar</option>
+      <option value="line">Line</option>
+      <option value="pie">Pie</option>
+      <option value="doughnut">Doughnut</option>
+      <option value="radar">Radar</option>
+      <option value="polarArea">Polar Area</option>
+      <option value="bubble">Bubble</option>
+    </select>
+    <div id="chartContainer">
+      <canvas id="pollutionChart"></canvas>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
