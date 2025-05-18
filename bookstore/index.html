@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Book Store</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" data-tab="store">Store</div>
+      <div class="tab" data-tab="admin">Admin</div>
+      <div class="tab" data-tab="cart">
+        Cart
+        <div id="cart-count-badge">0</div>
+      </div>
+    </div>
+
+    <!-- Store Tab -->
+    <div id="store" class="tab-content">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search books by name or description"
+      />
+      <div id="book-list"></div>
+    </div>
+
+    <!-- Admin Tab -->
+    <div id="admin" class="tab-content" style="display: none">
+      <!-- Login Form -->
+      <form id="login-form">
+        <h2>Admin Login</h2>
+        <label>
+          Username:
+          <input type="text" id="username" required />
+        </label>
+        <label>
+          Password:
+          <input type="password" id="password" required />
+        </label>
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <!-- Admin Panel to add books -->
+      <div id="admin-panel" style="display: none">
+        <h2>Add a New Book</h2>
+        <form id="add-book-form">
+          <label>
+            Book Name:
+            <input type="text" id="book-name" required />
+          </label>
+          <label>
+            Price:
+            <input type="number" id="book-price" min="0" step="0.01" required />
+          </label>
+          <label>
+            Description:
+            <textarea id="book-desc" rows="3" required></textarea>
+          </label>
+          <button type="submit" class="btn">Add Book</button>
+        </form>
+        <button id="logout-btn" class="btn logout-btn">Logout</button>
+      </div>
+    </div>
+
+    <!-- Cart Tab -->
+    <div id="cart" class="tab-content" style="display: none">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div>
+        <strong>Total Price: $<span id="total-price">0.00</span></strong>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

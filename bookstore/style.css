@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Tabs styling */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  margin-right: 8px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  position: relative;
+}
+
+.tab.active {
+  background-color: white;
+  border-color: #333;
+  border-bottom: 2px solid white;
+}
+
+/* Cart count badge */
+#cart-count-badge {
+  background: orange;
+  color: white;
+  border-radius: 50%;
+  display: none;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1em;
+}
+
+/* Content areas */
+.tab-content {
+  border: 1px solid #333;
+  border-radius: 0 6px 6px 6px;
+  padding: 20px;
+  background-color: white;
+}
+
+#book-list .book {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-info {
+  max-width: 70%;
+}
+
+.book-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.book-desc {
+  margin: 6px 0;
+  color: #555;
+}
+
+.book-price {
+  color: green;
+  font-weight: bold;
+}
+
+/* General button style removed for add-to-cart and counter to separate styles */
+
+/* Add to Cart button */
+.add-to-cart-btn {
+  background-color: #2e8b57; /* fresh green */
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(46, 139, 87, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-size: 1.1em;
+  min-width: 120px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #276746;
+  box-shadow: 0 4px 8px rgba(39, 103, 70, 0.6);
+}
+
+/* Counter container and buttons */
+.counter-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.counter-container button {
+  width: 36px;
+  height: 36px;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 0;
+  line-height: 1;
+  border-radius: 6px;
+  border: 1.5px solid #2e8b57;
+  background-color: white;
+  color: #2e8b57;
+  box-shadow: 0 1px 4px rgba(46, 139, 87, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.counter-container button:hover {
+  background-color: #2e8b57;
+  color: white;
+  box-shadow: 0 3px 7px rgba(39, 103, 70, 0.7);
+}
+
+.counter-container .quantity-value {
+  min-width: 28px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #2e8b57;
+  user-select: none;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.cart-item-name {
+  font-weight: 600;
+}
+
+#logout-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #a33;
+}
+
+#logout-btn:hover {
+  background-color: #c55;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.logout-btn {
+  background-color: #a33;
+}
+
+.logout-btn:hover {
+  background-color: #c55;
+}
